@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: radial-gradient(#f7eedd, #008dda);
+      }
+      .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div class="center-container">
+        <h2>Please Upload Excel file here</h2>
+        <div class="flx3">
+          <form
+            id="excelForm"
+            enctype="multipart/form-data"
+            class="flx2"
+            action="/upload"
+            method="post"
+          >
+            <input type="file" name="excelFile" accept=".xlsx, .xls" />
+            <button type="submit">Upload Excel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
